@@ -12,7 +12,7 @@ public class Soduko {
 
         int[][] board = new int[boardSize][boardSize];
 
-        int value = 0;
+        int value;
 
         List<Integer> rowList = new ArrayList<>(); //Holds values in current row
         List<Integer> colList = new ArrayList<>(); //Holds values in current column
@@ -109,13 +109,6 @@ public class Soduko {
                     System.out.print("0 ");
                 }
             }
-            System.out.println();
-        }
-    }
-
-    public void printList(List<Integer> list){
-        for (Integer integer : list) {
-            System.out.print(integer + ", ");
             System.out.println();
         }
     }
